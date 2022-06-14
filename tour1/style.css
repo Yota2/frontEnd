@@ -1,42 +1,41 @@
 h1{
-    color: rgb(42, 18, 18);
-    background-color: rgb(136, 164, 94);
+  color: rgb(42, 18, 18);
+  background-color: rgb(136, 164, 94);
 }
 h3{
-    color: blue ;
+  color: blue ;
 }
 
 .title{
-    columns: rgb(133, 45, 45);
-    background-color: rgb(147, 89, 89);
+  columns: rgb(133, 45, 45);
+  background-color: rgb(147, 89, 89);
 }
 .container{
-    color: aliceblue;
-    background-color: bisque;
-    width:300px;
+  color: aliceblue;
+  background-color: bisque;
+  width:300px;
 }
 
 a{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 a:hover{
-    font-size: 29px;
-    columns: blue;
+  font-size: 29px;
+  columns: blue;
 }
 a:visited{
-    color: red;
+  color: red;
 }
 .tiger{
-    width: 100px;
-    max-width: 100%;
-    height: auto;
+  width: 100px;
+  max-width: 100%;
+  height: auto;
 }
 button{
-    height: 50px;
-    width: 50px;
-    background-color: rgb(red, green, blue);.button1 {background-color: #4CAF50;} /* Green */
+  height: 50px;
+  width: 50px;
+  background-color: rgb(red, green, blue);.button1 {background-color: #4CAF50;} /* Green */
 }
 .button1{
-    color: cornsilk;
+  color: cornsilk;
 }
-    
