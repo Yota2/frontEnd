@@ -1,0 +1,200 @@
+               
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+body {
+  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
+        background-image: url("background.jpg");
+        background-size: cover;
+        font-family: 'Bahnschrift', sans-serif;                                  
+        /* line-height: 1.6;
+        margin: 0; 
+        min-height: 100vh;  */
+}
+h2{
+  font-family: 'Cedarville Cursive', cursive;
+  
+}
+
+
+.nav-list{
+  background-color: rgb(151, 104, 104);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  padding: 10px, 5%;
+
+}
+
+
+.nav-logo{
+  padding-left: 80px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+  justify-content: space-between;
+}
+#logo-text{
+  padding-left: 20px
+}
+.nav-menu{
+  display: flex;
+  flex-wrap: wrap;
+  padding-right:70px;
+  justify-content: space-between;
+}
+.nav-menu>* {
+  padding-top:7px;
+  padding-left: 90px;
+  flex: 0 0 -1px;
+}
+
+/*  
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+li:nth-child(2) {
+  margin-right: auto;
+  margin-left: -50rem;
+} */
+
+footer{
+  margin-top: auto;
+  border: solid 13px;
+  justify-content:space-around;
+  width: 100%;
+  height: 50%;
+  background-color: rgb(151, 104, 104);
+}
+
+h3{
+  margin-left: 780px;
+}
+
+
+  .footerlist{
+  padding-left: 1520px;
+  display: flex;
+  align-items:flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+/* }
+.footerlist{
+ .footerlist{
+  display: flex;
+  flex-shrink: 300;
+ flex-direction: row;
+ justify-content: space-evenly;
+ width: 50%;
+ background-color: rgb(151, 104, 104);
+ color: white;
+  */
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* This was the first css */
+/* 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  .footer{
+    position: fixed;
+    margin-right: 2rem;
+   left: 0;
+   bottom: 0;
+   height: 8%;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   text-align: center;
+} */
+/* 
+#footerlist{
+    list-style: none;
+    float: right;
+    font-size: 16px;
+    display: flex ;
+    justify-content:space-around;  
+    color: #C38D9E;
+    position:static; 
+    padding: 2px 1px;   
+} */

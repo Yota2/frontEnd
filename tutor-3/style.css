@@ -1,0 +1,39 @@
+h1{
+    color: red;
+    text-align: center;
+}
+
+table ,th, td{
+    border: 4px solid rgba(88, 17, 17, 0.249);
+    border-collapse:collapse;
+}
+tf,th{
+    padding: 20px;
+}
+table{
+    margin: 30px;
+}
+#tabllayout{
+    background-color: rgb(240, 115, 140);
+
+}
+#tabllayout>th,td:nth-child(1){
+    color: rgb(5, 245, 221);
+}
+#tabllayout>td:not(:nth-child(1)){
+    color: rgb(253, 255, 255);
+}
+#tabllayout>th,#tabllayout:nth-child(2n+1){
+    background-color: rgb(115, 16, 142) important;
+}
+#tabllayout>th,td:nth-child(2n+1){
+    background-color: rgb(12, 66, 242);
+}
+#layoutlast th, #layoutlast td, #layoutlast{
+    border: none;
+    background: rgb(247, 172, 172);
+}
+#layoutlast th{
+    border-bottom: 4px, solid,greenyellow,!important ;
+    line-height: 10%;
+}

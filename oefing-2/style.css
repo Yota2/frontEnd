@@ -20,15 +20,15 @@ footer{
     font-size: larger;
     color: 41B3A3;
 }
-
+ 
 #nav{
     list-style: none;
     font-size: 25px;
     display: flex ;
     justify-content:space-around;  
     color: #C38D9E;
-    position: static;
-}
+    position:static;
+} 
 
 #nav>li::marker{
     font-size: 10px;
