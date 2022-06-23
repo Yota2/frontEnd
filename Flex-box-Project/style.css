@@ -1,0 +1,115 @@
+               
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* display: flex;
+    justify-content:space-around */
+    margin: 40px;
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+header{
+    border: 6px solid red;
+    display:flex;
+    justify-content:space-between;   
+}
+.left-menu{
+display: flex;
+justify-content: center;
+}
+h1{
+    
+    font-family: 'Cedarville Cursive', cursive;
+   }
+   
+   .right-nav{
+    padding-top: 13px;
+    display: inline;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.nav-item{
+    display: inline;  
+}
+ 
+
+main{
+    text-align: center;
+    border: 15px solid black;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around
+    
+}
+.main-butto{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    border: 6px solid rgb(235, 203, 23);
+}
+img{
+  margin: 0, auto;
+  object-fit: cover;
+}
+
+button {
+    display: inline-block;
+    vertical-align: middle;
+    width: 250px;
+    height: 50px;
+    line-height: 30px;
+    background: gray;
+    margin:4px;
+    text-align: center; 
+  }
+.right-menu{
+    display: flex;
+    justify-content:space-around;
+    border: 6px solid rgb(235, 23, 65);
+}
+table ,th, td{
+  border-collapse: separate;
+    padding-left: 90px;
+    border: 4px solid rgba(88, 17, 17, 0.249);
+    border-collapse:collapse;
+  }
+  tf,th{
+    padding: 50px;
+  }
+  table{
+ 
+
+    margin: 40px;
+  }
+  table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: #d1dcdc;
+  }
+footer{
+    display: flex;
+    justify-content:space-around;
+    border:0.5em solid rgb(7, 231, 52);
+    
+}
+h3{
+    margin-left: 480px;
+}
+
+.footer-item{
+    display: inline;
+    
+}
