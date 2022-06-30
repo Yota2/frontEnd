@@ -100,6 +100,28 @@ var studenten=[
 
     },
 ]
+let passed =studenten.filter(diploma)
+function diploma(puten){
+    return puten.puten>=50;
+}
+passed.map((studenten)=>{
+    document.querySelector("#tabel1").innerHTML += `<tr>
+    <td>${studenten.id}</td>
+    <td>${studenten.name}</td>
+    <td>${studenten.crusus}</td>
+       <td>${studenten.puten}</td>
+    </tr>`})
 
-let higscoor = studenten.filter(puten => puten > 50);
-console.log(higscoor)
+    
+    let faild =studenten.filter(diploma)
+    function faildresult(puten){
+        return puten.puten<=50;
+    }
+    faild.map((studenten)=>{
+        document.querySelector("#tabel2").innerHTML += `<tr>
+        <td>${studenten.id}</td>
+        <td>${studenten.name}</td>
+        <td>${studenten.crusus}</td>
+           <td>${studenten.puten}</td>
+        </tr>`})
+

@@ -109,7 +109,4 @@ Students.map((Students)=>{
 })
 
 
-// function myfunction(){
-// 	var text = document.getElementById().ariaValueMax;
-// 	alert ("The data is printed");
-// }
+
