@@ -2,255 +2,163 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
-ul{
-  list-style: none;
-}
-a{
-  text-decoration: none;
-}
-body {
-  min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-
-
-        background-image: url("background.jpg");
-        background-size: cover;
-        font-family: 'Bahnschrift', sans-serif;                                  
-        /* line-height: 1.6;
-        margin: 0; 
-        min-height: 100vh;  */
-}
-header{
-  padding-bottom: 120px;
-}
-h2{
-  font-family: 'Cedarville Cursive', cursive;
-  
+.element {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
-
-.nav-list{
-  background-color: rgb(151, 104, 104);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-  height: 10%;
-  padding: 10px, 5%;
-
-}
-
-
-.nav-logo{
-
-  padding-left: 80px;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  list-style-type: none;
-  justify-content: space-between;
-}
-#logo-text{
-  padding-left: 20px
-}
-.nav-menu{
-  display: flex;
-  flex-wrap: wrap;
-  padding-right:70px;
-  justify-content: space-between;
-}
-.nav-menu>* {
-  padding-top:7px;
-  padding-left: 90px;
-  flex: 0 0 -1px;
-}
-
-img{
-  width: 200px;
-  height: 250;
+body{
+    /* display: flex;
+    justify-content:space-around */
+    
+    margin: 40px;
+    background-image: url("background.jpg");
+    background-size:cover;
+    font-size:normal;
+    
 }
 main{
-  padding-top: 2px;
-  margin: 50px 30px 300px 18px;
-  border: solid 25px red;
-  display: flex;
-  justify-content: space-between;
-}
+  padding-top: 0.2px;
 
-/* table{
-display: flex;
-justify-content: center;
-} */
-.left-menu{
-  display: flex;
-  justify-content: center;
-border: solid 25px;
 }
-.right-menu{
-  padding-left: 530px;
-  border: solid 25px;
+ul{
+    list-style: none;
   }
- 
-table ,th, td{
-  padding-left: 430px;
-  border: 4px solid rgba(88, 17, 17, 0.249);
-  border-collapse:collapse;
-}
-tf,th{
-  padding: 50px;
-}
-table{
-  margin: 50px;
-}
-.images-table{
- display: flex;
- justify-content: center;
-
-}
-td{
-  padding-right: 323px;
-  text-align:justify
-}
-
-
-/*  
-.nav-item:first-child {
-  margin-right: auto;
-  margin-left: 2rem;
-}
-
-li:nth-child(2) {
-  margin-right: auto;
-  margin-left: -50rem;
-} */
-
-footer{
-  margin-top: auto;
-  border: solid 13px;
-  justify-content:space-around;
-  width: 100%;
-  height: 50%;
-  background-color: rgb(151, 104, 104);
-}
-
-h3{
-  margin-left: 780px;
-}
-
-
-  .footerlist{
-
-  padding-left: 1520px;
-  display: flex;
-  align-items:flex-end;
-  flex-direction: row;
-  justify-content: space-between;
-  }
-
-/*
-  .footerlist>
- }
-.footerlist{
- .footerlist{
-  display: flex;
-  flex-shrink: 300;
- flex-direction: row;
- justify-content: space-evenly;
- width: 50%;
- background-color: rgb(151, 104, 104);
- color: white;
-  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* This was the first css */
-/* 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: right;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 22px;
+  a{
     text-decoration: none;
   }
+header{
+  margin-top: -1px;
+  padding-top: -12  px;
+  background-color:#A1A2B2;
+    /* border: 6px solid red; */
+    display:flex;
+    justify-content:space-between;   
+}
+.left-menu{
+display: flex;
+justify-content: center;
+}
+h1{
+    
+    font-family: 'Cedarville Cursive', cursive;
+   }
+   
+   .right-nav{
+    padding-top: 13px;
+    display: inline;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.nav-item{
+    display: inline;  
+}
+ 
+
+main{
   
-  li a:hover:not(.active) {
-    background-color: #111;
+    text-align: center;
+    /* border: 15px solid black; */
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around
+    
+}
+.main-butto{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    /* border: 6px solid rgb(235, 203, 23); */
+}
+img{
+  margin: 0, auto;
+  object-fit: cover;
+}
+
+button {
+    display: inline-block;
+    vertical-align: middle;
+    width: 250px;
+    height: 50px;
+    line-height: 30px;
+    background: gray;
+    margin:4px;
+    text-align: center; 
   }
+.right-menu{
+    display: flex;
+    justify-content:space-around;
+    /* border: 6px solid rgb(235, 23, 65); */
+}
+table, th, td {
+  border: 5px solid rgb(226, 15, 15);
+}
+ table tbody > t > td:last-child {
+  border: 0;
+  // any other options needed.
+} */
+table{
+  height: 1px;
+  margin: 40px;
+  border-collapse: collapse;
   
-  .active {
-    background-color: #04AA6D;
+}
+
+/* tr:last-child {
+  border :none;
+} */
+.images-table{
+margin-right: 90px;
+}
+.text-table{
+    padding-right: 75px;
+}
+table tr td:nth-child(5){
+  display: none;
+}
+table ,th, td{
+  text-align: center;
+ height: 1px;
+  border-collapse: separate;
+    padding-left: 90px;
+    border: 6px solid rgba(88, 17, 17, 0.249);
+    border-collapse:collapse;
   }
-  .footer{
-    position: fixed;
-    margin-right: 2rem;
-   left: 0;
-   bottom: 0;
-   height: 8%;
-   width: 100%;
-   background-color: #333;
-   color: white;
-   text-align: center;
+  /* table tr td:nth-child(n+)1{
+    display: none;
 } */
-/* 
-#footerlist{
-    list-style: none;
-    float: right;
-    font-size: 16px;
-    display: flex ;
-    justify-content:space-around;  
-    color: #C38D9E;
-    position:static; 
-    padding: 2px 1px;   
-} */
+  tf,th{
+    padding: 50px;
+  }
+ 
+  table, th, td {
+    border: 1px solid ;
+    
+    /* border-collapse: collapse; */
+  }
+  th, td {
+    /* background-color: #d1dcdc; */
+  }
+footer{
+ 
+
+  background-color: #A1A2B2;
+    display: flex;
+    justify-content:space-around;
+    /* border:0.5em solid rgb(7, 231, 52); */
+    
+}
+h3{
+  padding-top: 7px;
+    margin-left: 480px;
+}
+
+.footer-item{
+    display: inline;
+    
+}
