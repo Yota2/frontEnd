@@ -23,7 +23,41 @@ function myFunction(e) {
         }
         console.log(x)
      
-    }
-
-
+    }}
+// ----------------------------------------------------------------------------------------------------
+let showText =false;
+let tekst = document.getElementById("text")
+function show(){
+showText =  !showText
+if(show == true){
+  tekst.style.visibility="visble"
+}else{
+  tekst.style.visibility="hidden"
 }
+console.log(show)
+}
+//boekLijst
+let titel = document.getElementById("titel")
+let schrijver = document.getElementById("schrijver")
+let verhaal = document.getElementById("verhaal")
+let boek = document.getElementById("boek")
+let btnLijst = document.getElementById("btnLijst")
+
+btnLijst.addEventListener('click', function(){
+  boek.innerHTML += `<tr>
+  <td>${titel.value}</td>
+  <td>${schrijver.value}</td>
+  <td>${verhaal.value}</td>
+  <td> <i class="fa-solid fa-trash-can"></i> </td>
+  </tr>`
+})
+
+titel.value="";
+
+function removerij(e){
+  console.log(e.parentElement.parentElement)
+
+e.parentElement.parentElement.remov()
+}
+// ------------------------------------------------------------------------------------------------------------------------
+

@@ -27,7 +27,9 @@
                                 <a href="../tout-9/index.html" target="_blank">Project-Two</a>
                             </div>
                         </button>
+                         </div>
                         <button class="dropbtn">Contact</button>
+                   
    
             </ul>
           </div>
@@ -121,12 +123,50 @@
             
             <div class="main-right-menu">
                <img class = "right-img" src="10168.jpg">
+
+               <div class="right-form">
+
+                <form id="inputboek">
+                    <input type="text" placeholder="titel" id="titel" value="">
+                    <!-- <br>
+                    <input type="text" placeholder="schrijver" id="schrijver" value=""> -->
+                    <br>
+                    <textarea id="verhaal" rows="10" value=""></textarea>
+                </form>
+                <button id="btnLijst" type="submit">Opslaan</button>
+                <br>
+                <table id="boekenLijst">
+                    <thead>
+                        <tr>
+                            <th>Titel</th>
+                            <th>Verhaal</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody id="boek">
+                        <tr>
+                            <td>Pietje Puk</td>
+                            <td>Lars Huppel</td>
+                            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias accusamus quisquam expedita quis,
+                                qui porro, eveniet numquam obcaecati quae culpa aspernatur necessitatibus modi perspiciatis nam
+                                facere minima ipsa itaque suscipit?</td>
+                            <td>
+                                <i class="fa-solid fa-trash-can" onclick="removeRij(this)"></i>
+                            </td>
+                           
+                        </tr>
+                    </tbody>
+                </table>
+               </div>
             </div>
+            <DIV></DIV>
+
             
         </main>
     
         <footer>
             <h3 >  &#169; yohana-2022</h3>
+            <hr>
             <div class="right-footer">
                <ul>
                 <li class="footer-item" style="padding-left:1em ; font-size:30px">Contact</li>
