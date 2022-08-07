@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <script>
+            /*
+            Opdracht 6
+            Vraag aan de gebruiker om een naam, voornaam en adres in te voeren.
+            Maak een functie aan, dat een string teruggeeft 
+            waar de naam en de voornaam op één lijn staan, 
+            en het adres op de volgende lijn.
+            */
+            //Vraag naam
+            var naam = prompt("Geef naam");
+            //Vraag voornaam
+            var voornaam = prompt("Geef voornaam");
+            //Vraag adres
+            var adres = prompt("Geef adres");
+            //Roep methode aan
+            var resultaat = aanmakenNaamkaartje(naam, voornaam, adres);
+            //Toon resultaat
+            alert(resultaat);
+
+            function aanmakenNaamkaartje(name, firstname, address) {
+                var resultaat = name + " " + firstname + "\n" + address;
+                return resultaat;
+            }
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

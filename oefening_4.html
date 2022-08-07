@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <script>
+            /*
+            Opdracht 4
+            Vraag de gebruiker om een woord en een letter.
+            Toon het woord aan de gebruiker zonder de ingevoerde letter.
+            Voorbeeld:
+            Woord: aardappel
+            Karakter: a
+            Resultaat: rdppel
+            */
+            //Vraag de gebruiker om een woord.
+            var woord = prompt("Geef een woord");
+            //Vraag de gebruiker om een letter.
+            var letter = prompt("Geef een letter");
+
+            //maken een array om even alle stukken zonder de letter in op te slaan
+            var tussenArray = woord.split(letter);
+            //we gaan de array terug naar een woord converteren
+            woord = tussenArray.join("");
+
+            //toon resultaat
+            alert(woord);
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

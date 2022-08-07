@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+         <script>
+            /*
+            Opdracht 8
+            Vraag aan de gebruiker om een oud BBAN rekeningnummer in te voeren.
+            Maak een programma die de geldigheid van dit oud BBAN rekeningnummer controleert.
+            Een rekeningnummer bestaat uit 12 getallen, dit moet gevalideerd worden.
+            Een rekeningnummer is numeriek, dit moet gevalideerd worden.
+            De rest van de eerste 10 getallen gedeeld door 97 moet gelijk zijn aan de laatste twee getallen.
+            Bijvoorbeeld het volgende rekeningnummer is een juist rekeningnummer: 460050215122.
+            Toon het resultaat waarin letterlijk staat, of het een geldig of ongeldig nummer is.
+            */
+            //Vraag rekeningnummer
+            var rekeningNummerString = prompt("Voer een rekening nummer in");
+
+            //Declareer boolean 
+            var isGeldigNummer = false;
+
+            //Check lengte op 12 karakters en check of het numeriek is
+            if (rekeningNummerString.length == 12 && !isNaN(rekeningNummerString)) {
+                //neem de eerste 10 karakters en converteer naar een getal
+                var eersteDeel = parseInt(rekeningNummerString.substring(0, 10));
+
+                //neem de laatste 2 karakters en converteer naar een getal
+                var controleDeel = parseInt(rekeningNummerString.substr(10, 2));
+
+                //controleer modulo
+                isGeldigNummer = eersteDeel % 97 == controleDeel;
+            };
+
+            //Toon resultaat
+            if (isGeldigNummer) {
+                alert("Dit is een geldig nummer");
+            } else {
+                alert("Dit is een ongeldig nummer");
+            };
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

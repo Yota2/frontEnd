@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <script>
+            /*
+            Opdracht 3
+            Maak een programma dat het BMI berekent en toon aan de gebruiker het resultaat.
+            Je vraagt de lengte en het gewicht.
+            Je berekent de BMI, dit doe je op volgende manier:
+            Het gewicht in kilogram delen door het kwadraat van de lengte in meter.
+            
+            Wanneer de BMI onder de 20 ligt, toon je dat de BMI te laag is.
+            Wanneer de BMI tussen de 20 en 25 ligt, toon je dat het een gezonde BMI is.
+            Wanneer de BMI boven de 25 ligt, toon je dat de BMI te hoog is.
+            */
+            //Vraag het gewicht aan de gebruiker
+            var kg = parseFloat(prompt("Geef je gewicht in kilogram op"));
+            //Vraag de lengte aan de gebruiker²
+            var lengte = parseFloat(prompt("Geef je lengte in meter op"));
+            
+            //bereken bmi
+            var bmi = kg / (lengte * lengte);
+            
+            //toon het resultaat aan de gebruiker.
+            if (bmi < 20) {
+                alert("Uw bmi is te laag");
+            } else if (bmi >= 20 && bmi <= 25) {
+                alert("Uw bmi is goed");
+            } else {
+                alert("Uw bmi is te hoog");
+            };
+            
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+    <head>
+       <script>
+            /*
+            Opdracht 7
+            Een moeder heeft recht op 25 € kindergeld per kind. 
+            Voor het derde kind (en elk volgend) kind, krijgt ze een toeslag van 12.5 €. 
+            Voor het vijfde (en elk volgend) kind krijgt ze nog een toeslag van 7.5 €. 
+            Als het maandloon van de moeder maximaal 500 € is, dan krijgt ze 25 % toeslag op het kindergeld. 
+            Maar als haar maandloon groter is dan 2000 €, krijgt ze 45 % minder. 
+            Minimaal heeft een moeder altijd recht op 20 € per kind. 
+            Vraag het aantal kinderen en het maandloon, en toon het kindergeld waar de moeder recht op heeft.
+            */
+            //Vraag aantal kinderen
+            var aantalKinderen = parseInt(prompt("Hoeveel kinderen heeft u: "));
+
+            //Vraag maandloon
+            var maandLoon = parseFloat(prompt("Hoeveel bedraagt uw maandelijks inkomen"));
+
+            //declareren kindergeld
+            var kindergeld = 0;
+
+            //kindergeld berekenen
+            kindergeld = aantalKinderen * 25;
+            if (kindergeld > 2) {
+                kindergeld += (aantalKinderen - 2) * 12.5;
+            };
+
+            if (kindergeld > 4) {
+                kindergeld += (aantalKinderen - 4) * 7.5;
+            };
+
+            //toeslag berekenen
+            if (maandLoon <= 500) {
+                kindergeld *= 1.25;
+            } else if (maandLoon > 2000) {
+                kindergeld *= 0.55;
+            };
+
+            //declareren minimum
+            var minimum = 20 * aantalKinderen;
+
+            if (kindergeld < minimum) {
+                kindergeld = minimum;
+            };
+
+            //Toon Resultaat
+            alert("U hebt recht op " + kindergeld + "€");
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

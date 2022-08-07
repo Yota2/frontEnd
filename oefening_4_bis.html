@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<script>
+/*
+Vraag de gebruiker om een woord en een letter.
+Toon het woord aan de gebruiker zonder de ingevoerde letter.
+Voorbeeld:
+Woord: aardappel
+Karakter: a
+Resultaat: rdppel
+*/
+			//vraag een woord
+			var ingevoerdWoord = prompt('Geef een woord in');
+			
+			//vraag een letter
+			var ingevoerdeLetter = prompt('Geef een letter in');
+			
+			//declareren resultaat
+			var resultaat = "";
+			
+			//we gaan over het woord loopen om te kijken of het een ander karakter is
+			for(var i=0; i < ingevoerdWoord.length; i++){
+				if(ingevoerdWoord[i] != ingevoerdeLetter){
+					resultaat = resultaat + ingevoerdWoord[i];
+				}
+			}		
+			
+			alert(resultaat);
+
+		</script>
+	</head>
+</html>

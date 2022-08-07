@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script>
+			
+/*
+Maak een array aan met volgende wagens:
+Opel, BMW, Volkswagen, Audi, Mercedes.
+Maak een tweede array aan met volgend prijzen:
+25000, 30000, 26000, 28500, 32000.
+Vraag aan de gebruiker om een maximum prijs in te voeren, 
+en toon alle auto’s die onder die prijs liggen.
+*/
+			//declareren arrays
+			var wagens = ["Opel", "BMW", "Volkswagen", "Audi", "Mercedes"];
+			var prijzen = [25000, 30000, 26000, 28500, 32000];
+			
+			//vraag maximum prijs
+			var maximumPrijs = parseInt(prompt('geef uw prijs'));
+			
+			//wagens die voldoen aan de prijs
+			var resultaat = [];
+			
+			//prijzen vergelijken door over prijzen array te loopen
+			for(var i=0; i < prijzen.length; i++){
+				//kleiner dan maximum prijs ?
+				if(prijzen[i] <= maximumPrijs){
+					resultaat.push(wagens[i]);
+				}
+			}
+			
+			alert(resultaat);
+			
+		</script>
+	</head>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <script>
+            /*
+            Opdracht 1
+            Vraag aan de gebruiker om een getal in te voeren tussen 1 en 31.
+            Indien het geen getal is, verwittig dan de gebruiker dat het een getal moet zijn.
+            Indien het buiten deze range ligt, verwittig dan dat het een getal tussen 1 en 31 moet zijn.
+            */
+			
+			//vraag aan de gebruiker een getal
+            var invoer = prompt("Geef een getal tussen 1 en 31");
+			
+			//check of het type een getal is
+            if (isNaN(invoer)) {
+                alert("Dit is geen numerieke invoer");
+            } else {
+				//converteren naar een getal
+                var getal = parseInt(invoer);
+				
+				//check of het getal tussen 1 en 31 ligt
+                if (getal < 1 || getal > 31) {
+                    alert("De invoer moet een getal tussen 1 en 31 zijn");
+                } else {
+                    alert("Dank u voor uw invoer");
+                }
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

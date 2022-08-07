@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <script>
+            /*
+            Opdracht 2
+            Vraag aan de gebruiker een getal tussen 1000 en 9999.
+            Toon achtereenvolgens de duizendtallen, de honderdtallen, de tientallen en de eenheden.
+            */
+			
+			//vraag een getal aan de gebruiker
+            var invoer = prompt("Geef een getal tussen 1000 en 9999");
+            
+			//bereken duizendtallen
+            var aantal = parseInt(invoer / 1000);
+            invoer = invoer % 1000;
+            
+			//maak een variabele die we gaan tonen aan de gebruiker
+            var toon = "Aantal duizendtallen = " + aantal + "\n";
+            
+			//bereken honderdtallen
+            aantal = parseInt(invoer / 100);
+            invoer = invoer % 100;            
+            toon += "Aantal honderdtallen = " + aantal + "\n";
+            
+			//bereken tientallen
+            aantal = parseInt(invoer / 10);
+            invoer = invoer % 10;            
+            toon += "Aantal tientallen = " + aantal + "\n";
+            
+			//voeg de overgebleven eenheden toe
+            toon += "Aantal eenheden = " + invoer;
+            
+            alert(toon);
+            
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
